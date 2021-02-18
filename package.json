@@ -1,0 +1,7 @@
+{
+  "name": "32768_discrete_colours_app",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:guamboy/32768_discrete_colours_app.git",
+  "license": "MIT"
+}
