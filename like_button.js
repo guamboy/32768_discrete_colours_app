@@ -22,12 +22,15 @@ class LikeButton extends React.Component {
 }
 
 // Find all DOM containers, and render Like buttons into them.
-document.querySelectorAll('#content')
-  .forEach(domContainer => {
-    // Read the comment ID from a data-* attribute.
-    const commentID = parseInt(domContainer.dataset.commentid, 10);
-    ReactDOM.render(
-      e(LikeButton, { commentID: commentID }),
-      domContainer
-    );
-  });
+// document.querySelector('#content')
+//   .forEach(domContainer => {
+//     // Read the comment ID from a data-* attribute.
+//     const commentID = parseInt(domContainer.dataset.commentid, 10);
+//     ReactDOM.render(
+//       e(LikeButton, { commentID: commentID }),
+//       domContainer
+//     );
+//   });
+
+const domContainer = document.querySelector('#content');
+ReactDOM.render(e(LikeButton), domContainer);
