@@ -1,6 +1,6 @@
         const h1 = document.createElement("h1");
         h1.innerHTML = "Course progress";
-
+console.log('yesssssssssss')
 document.getElementById("content").prepend(h1);
 
 // 'use strict';
