@@ -1,36 +1,41 @@
-'use strict';
+        const h1 = document.createElement("h1");
+        h1.innerHTML = "Course progress";
 
-const e = React.createElement;
+document.getElementById("content").prepend(h1);
 
-class LikeButton extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = { liked: false };
-  }
+// 'use strict';
 
-  render() {
-    if (this.state.liked) {
-      return 'You liked comment number ' + this.props.commentID;
-    }
+// const e = React.createElement;
 
-    return e(
-      'button',
-      { onClick: () => this.setState({ liked: true }) },
-      'Like'
-    );
-  }
-}
+// class LikeButton extends React.Component {
+//   constructor(props) {
+//     super(props);
+//     this.state = { liked: false };
+//   }
 
-// Find all DOM containers, and render Like buttons into them.
-// document.querySelector('#content')
-//   .forEach(domContainer => {
-//     // Read the comment ID from a data-* attribute.
-//     const commentID = parseInt(domContainer.dataset.commentid, 10);
-//     ReactDOM.render(
-//       e(LikeButton, { commentID: commentID }),
-//       domContainer
+//   render() {
+//     if (this.state.liked) {
+//       return 'You liked comment number ' + this.props.commentID;
+//     }
+
+//     return e(
+//       'button',
+//       { onClick: () => this.setState({ liked: true }) },
+//       'Like'
 //     );
-//   });
+//   }
+// }
 
-const domContainer = document.querySelector('#content');
-ReactDOM.render(e(LikeButton), domContainer);
+// // Find all DOM containers, and render Like buttons into them.
+// // document.querySelector('#content')
+// //   .forEach(domContainer => {
+// //     // Read the comment ID from a data-* attribute.
+// //     const commentID = parseInt(domContainer.dataset.commentid, 10);
+// //     ReactDOM.render(
+// //       e(LikeButton, { commentID: commentID }),
+// //       domContainer
+// //     );
+// //   });
+
+// const domContainer = document.querySelector('#content');
+// ReactDOM.render(e(LikeButton), domContainer);
